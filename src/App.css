@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 5px #111111, 2px 2px 5px #111111;
+}
+
+html { 
+  background: url('./Images/homebg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.headerContainer h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.headerContainer h3 {
+  background-color: gold;
+  border-radius: 2rem;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.headerContainer h3 span {
+  background-color: slateblue;
+  border-radius: 2rem;
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+.headerContainer h3 a{
+  text-decoration: none;
+  color: white;
+  padding-right: 1rem;
+}
+
+.headerContainer input {
+  padding: 5px 10px 5px 10px;
+  width: 280px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all ease-in-out 0.5s;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonContainer img {
+  height: 45px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.buttonContainer img:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+}
+
+::placeholder {
+  color: gray;
+  font-weight: 500;
+  text-shadow: none;
+}
+
+.headerContainer input:focus {
+  outline: none;
+  border-radius: 0rem;
+  border-bottom: solid #def2f1 2px;
+  transform: scale(1.05);
+}
+
+.headerContainer input:hover {
+  transform: scale(1.05);
+  border-radius: 1rem;
+  transition: all ease-in-out 0.5s;
+}
+
+.coinContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.loadingMssg {
+  color: white;
+}
